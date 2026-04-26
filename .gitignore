@@ -1,0 +1,14 @@
+.gradle
+.idea
+build/
+*.apk
+*.ap_
+*.dex
+*.class
+.DS_Store
+*.jks
+*.keystore
+*.log
+local.properties
+gradlew
+gradlew.bat

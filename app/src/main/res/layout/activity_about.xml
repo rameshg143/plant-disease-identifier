@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbarcompat.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:elevation="@dimen/card_elevation"
+            app:title="@string/about_title"
+            app:titleTextColor="@color/text_white"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    </com.google.android.material.appbarcompat.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="@dimen/image_size_large"
+                android:layout_height="@dimen/image_size_large"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/app_name"
+                android:layout_marginBottom="@dimen/padding_large" />
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_extra_large"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/padding_small" />
+
+            <!-- Version -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/padding_large" />
+
+            <!-- Description Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/corner_radius_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:id="@+id/tv_app_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_description"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/text_secondary"
+                        android:lineSpacingMultiplier="1.5" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Developer Info Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_medium"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/corner_radius_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_developer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Developed by: Dr Shyam Kishore G"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/padding_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_university"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KAVERI UNIVERSITY\nDepartment of Agricultural Technology"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/university_primary"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/padding_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="www.kaveriuniversity.edu.in"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/info"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Links -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/padding_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/info"
+                    android:layout_marginBottom="@dimen/padding_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_conditions"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/info" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
