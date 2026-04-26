@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Plant Disease Identifier</string>
+    <string name="university_name">KAVERI UNIVERSITY</string>
+    <string name="university_subtitle">Department of Agricultural Technology</string>
+    <string name="developer">Dr Shyam Kishore G</string>
+    
+    <!-- Main Activity -->
+    <string name="home_title">Plant Disease Detection</string>
+    <string name="capture_leaf">Capture Leaf Image</string>
+    <string name="upload_image">Upload from Gallery</string>
+    <string name="view_history">View History</string>
+    <string name="about_app">About App</string>
+    <string name="welcome_message">Welcome to Plant Disease Identifier</string>
+    <string name="description">Identify plant diseases by capturing or uploading leaf images. Get instant diagnosis and remedies.</string>
+    
+    <!-- Camera Activity -->
+    <string name="camera_title">Capture Leaf Image</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="retake_photo">Retake Photo</string>
+    <string name="analyze_image">Analyze Image</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="permission_denied">Permission Denied</string>
+    
+    <!-- Results Activity -->
+    <string name="analysis_results">Analysis Results</string>
+    <string name="plant_name">Plant Name</string>
+    <string name="disease_detected">Disease Detected</string>
+    <string name="confidence">Confidence</string>
+    <string name="view_remedy">View Remedy</string>
+    <string name="healthy_plant">Healthy Plant</string>
+    <string name="no_disease">No disease detected. Plant is healthy!</string>
+    <string name="analyzing">Analyzing image...</string>
+    <string name="analysis_failed">Analysis failed. Please try again.</string>
+    
+    <!-- Remedy Activity -->
+    <string name="remedy_title">Treatment Recommendations</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="treatment">Treatment</string>
+    <string name="prevention">Prevention</string>
+    <string name="chemical_control">Chemical Control</string>
+    <string name="organic_control">Organic Control</string>
+    <string name="save_remedy">Save Remedy</string>
+    
+    <!-- History Activity -->
+    <string name="detection_history">Detection History</string>
+    <string name="no_history">No detection history yet</string>
+    <string name="date">Date</string>
+    <string name="clear_history">Clear History</string>
+    <string name="confirm_clear">Are you sure you want to clear history?</string>
+    
+    <!-- About Activity -->
+    <string name="about_title">About Plant Disease Identifier</string>
+    <string name="version">Version 1.0</string>
+    <string name="app_description">Plant Disease Identifier is an advanced mobile application developed to help farmers and agricultural professionals identify plant diseases using artificial intelligence and machine learning.
+
+Features:
+• Real-time plant disease detection
+• AI-powered leaf analysis
+• Comprehensive remedy database
+• Offline functionality
+• User-friendly interface
+
+Developed by: Dr Shyam Kishore G
+KAVERI UNIVERSITY
+Department of Agricultural Technology</string>
+    <string name="contact">Contact</string>
+    <string name="website">Website: www.kaveriuniversity.edu.in</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions">Terms & Conditions</string>
+    
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="network_error">Network error. Please check your internet connection.</string>
+    <string name="try_again">Try Again</string>
+</resources>
