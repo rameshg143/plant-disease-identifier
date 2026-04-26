@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbarcompat.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:elevation="@dimen/card_elevation"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/text_white" />
+
+    </com.google.android.material.appbarcompat.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large">
+
+            <!-- University Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_large">
+
+                <ImageView
+                    android:layout_width="@dimen/image_size_medium"
+                    android:layout_height="@dimen/image_size_medium"
+                    android:src="@mipmap/ic_launcher"
+                    android:contentDescription="@string/university_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/university_name"
+                    android:textSize="@dimen/text_size_extra_large"
+                    android:textStyle="bold"
+                    android:textColor="@color/university_primary"
+                    android:layout_marginTop="@dimen/padding_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/university_subtitle"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="@dimen/padding_small" />
+
+            </LinearLayout>
+
+            <!-- Welcome Message -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_message"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/padding_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/padding_large" />
+
+            <!-- Buttons Container -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_capture_leaf"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/capture_leaf"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginBottom="@dimen/padding_medium"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/upload_image"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginBottom="@dimen/padding_medium"
+                app:backgroundTint="@color/secondary"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_view_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/view_history"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginBottom="@dimen/padding_medium"
+                app:backgroundTint="@color/info"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/about_app"
+                android:textSize="@dimen/text_size_large"
+                app:backgroundTint="@color/accent"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
